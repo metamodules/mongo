@@ -1,0 +1,10 @@
+version: "2"
+services:
+  mongo:
+    image: mongo:3.4.21-xenial
+    ports:
+      - 27017
+    environment:
+      - "MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}"
+      - "MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}"
+      - "MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}"

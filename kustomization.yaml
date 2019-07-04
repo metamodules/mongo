@@ -1,0 +1,4 @@
+---
+resources:
+  - ./kube/deployment.yaml
+  - ./kube/service.yaml

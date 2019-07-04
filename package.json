@@ -1,0 +1,41 @@
+{
+  "name": "@nodeapp/mongo",
+  "version": "0.0.1",
+  "description": "create-node-app metamodule for mongo. Develop and deploy mongo in seconds!",
+  "main": "lib/index.js",
+  "repository": "git@github.com:nodeapp-metamodules/mongo",
+  "authors": [
+    "Seandon Mooy <seandon@kubesail.com>",
+    "Dan Pastusek <dan@kubesail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.6.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-flowtype": "^3.9.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.17.1"
+  },
+  "deploy-node-app": {
+    "metamodule": true,
+    "driver": "lib/index.js",
+    "config": "lib/config.js",
+    "host": "MONGO_SERVICE_HOST",
+    "ports": {
+      "MONGO_SERVICE_PORT": "27017/tcp"
+    },
+    "serviceEnv": [
+      "MONGO_INITDB_ROOT_USERNAME",
+      "MONGO_INITDB_ROOT_PASSWORD",
+      "MONGO_INITDB_DATABASE"
+    ]
+  }
+}

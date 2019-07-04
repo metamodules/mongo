@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo
+spec:
+  selector:
+    matchLabels:
+      app: mongo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mongo
+    spec:
+      containers:
+        - name: master
+          image: mongo:3.4.21-xenial
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 10m
+              memory: 25Mi
+            limits:
+              cpu: 1
+              memory: 1000Mi
+          ports:
+            - containerPort: 27017
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: "${MONGO_INITDB_ROOT_USERNAME}"
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: "${MONGO_INITDB_ROOT_PASSWORD}"
+            - name: MONGO_INITDB_DATABASE
+              value: "${MONGO_INITDB_DATABASE}"
+
