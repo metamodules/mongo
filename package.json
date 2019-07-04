@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "create-node-app metamodule for mongo. Develop and deploy mongo in seconds!",
   "main": "lib/index.js",
-  "repository": "git@github.com:nodeapp-metamodules/mongo",
+  "repository": "git@github.com:metamodules/mongo",
   "authors": [
     "Seandon Mooy <seandon@kubesail.com>",
     "Dan Pastusek <dan@kubesail.com>"
