@@ -12,11 +12,11 @@ npm install @metamodules/mongo
 // This "just works" both in development and production!
 const mongo = require('@metamodules/mongo')()
 
-var kittySchema = new mongoose.Schema({
+var kittySchema = new mongo.Schema({
   name: String
 })
 
-var Kitten = mongoose.model('Kitten', kittySchema)
+var Kitten = mongo.model('Kitten', kittySchema)
 
 var fluffy = new Kitten({ name: 'fluffy' })
 fluffy.save(function(err, fluffy) {
