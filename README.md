@@ -5,12 +5,12 @@ For use with [create-node-app](https://github.com/kubesail/create-node-app) and 
 To add this metamodule to your project:
 
 ```
-npm install @nodeapp/mongo
+npm install @metamodules/mongo
 ```
 
 ```js
 // This "just works" both in development and production!
-const mongo = require('@nodeapp/mongo')()
+const mongo = require('@metamodules/mongo')()
 
 var kittySchema = new mongoose.Schema({
   name: String

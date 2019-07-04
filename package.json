@@ -1,5 +1,5 @@
 {
-  "name": "@nodeapp/mongo",
+  "name": "@metamodules/mongo",
   "version": "0.0.1",
   "description": "create-node-app metamodule for mongo. Develop and deploy mongo in seconds!",
   "main": "lib/index.js",
