@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      # How much storage should we request from the system?
+      # By default KubeSail gives you 100Mi of SSD
+      storage: 100Mi

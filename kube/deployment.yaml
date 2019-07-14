@@ -33,4 +33,11 @@ spec:
               value: "${MONGO_INITDB_ROOT_PASSWORD}"
             - name: MONGO_INITDB_DATABASE
               value: "${MONGO_INITDB_DATABASE}"
+          volumeMounts:
+            - mountPath: /data/db
+              name: mongo-data
+      volumes:
+        - name: mongo-data
+          persistentVolumeClaim:
+            claimName: mongo-pvc
 
