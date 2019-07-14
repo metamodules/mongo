@@ -2,3 +2,4 @@
 resources:
   - ./kube/deployment.yaml
   - ./kube/service.yaml
+  - ./kube/persistent-volume-claim.yaml
