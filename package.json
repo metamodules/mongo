@@ -1,6 +1,6 @@
 {
   "name": "@metamodules/mongo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "create-node-app metamodule for mongo. Develop and deploy mongo in seconds!",
   "main": "lib/index.js",
   "repository": "git@github.com:metamodules/mongo",
