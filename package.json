@@ -31,11 +31,6 @@
     "host": "MONGO_SERVICE_HOST",
     "ports": {
       "MONGO_SERVICE_PORT": "27017/tcp"
-    },
-    "serviceEnv": [
-      "MONGO_INITDB_ROOT_USERNAME",
-      "MONGO_INITDB_ROOT_PASSWORD",
-      "MONGO_INITDB_DATABASE"
-    ]
+    }
   }
 }
