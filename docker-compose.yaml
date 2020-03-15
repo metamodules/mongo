@@ -10,5 +10,5 @@ services:
       - "MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}"
     volumes:
       - mongo-data:/data/db
-  volumes:
-    mongo-data:
+volumes:
+  mongo-data:
