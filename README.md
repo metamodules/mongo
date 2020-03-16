@@ -10,7 +10,7 @@ npm install @metamodules/mongo
 
 ```js
 // This "just works" both in development and production!
-const mongo = require('@metamodules/mongo')()
+const mongo = require('@metamodules/mongo')().base
 
 var kittySchema = new mongo.Schema({
   name: String
